@@ -1,13 +1,19 @@
 import { Inter } from "next/font/google";
-import "../styles/globals.css";
 import Navbar from "@/components/Navbar";
+import "../styles/globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
     title: "To Do List",
+    description: "A simple to do list app",
 };
 
+/**
+ * @param {Object} props
+ * @param {React.ReactNode} props.children
+ * @returns {React.ReactNode}
+ */
 export default function RootLayout({ children }) {
     return (
         <>

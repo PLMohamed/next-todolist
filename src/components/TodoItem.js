@@ -3,6 +3,13 @@ import { changeTodoStatus, deleteTodo } from "@/lib/Todo";
 import { useRouter } from "next/navigation";
 import React from "react";
 
+/**
+ *
+ * @param {number} id
+ * @param {string} title
+ * @param {boolean} completed
+ * @returns
+ */
 export default function TodoItem({ id, title, completed }) {
     const router = useRouter();
     return (
